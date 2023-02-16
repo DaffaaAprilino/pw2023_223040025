@@ -12,7 +12,8 @@ $npm = 25;
 </head>
 
 <body>
-    <p>Aku adalah angka <b><?php echo $npm ?></b><br>
+    <p>
+        Aku adalah angka <b><?php echo $npm ?></b><br>
         Jika aku dikali 5, maka aku sekarang menjadi <b><?php echo $npm * 5 ?></b><br>
         Jika aku dibagi 2, maka aku sekarang menjadi <b><?php echo 125 / 2 ?></b><br>
         Jika aku ditambah 75, maka aku sekarang menjadi <b><?php echo 62.5 + 75 ?></b><br>
