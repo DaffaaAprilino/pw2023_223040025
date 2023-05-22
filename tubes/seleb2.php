@@ -30,22 +30,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.php">HOME</a>
+              <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="health.php">HEALTH</a>
+              <a class="nav-link" href="#">HEALTH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sport.php">SPORT</a>
+              <a class="nav-link" href="#">SPORT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  active" href="nasional.php">NASIONAL</a>
+              <a class="nav-link" href="#">NASIONAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tech.php">TECH</a>
+              <a class="nav-link" href="#">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="seleb.php">SELEB</a>
+              <a class="nav-link" href="#">SELEB</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -57,43 +57,43 @@
       </div>
     </nav>
 
-    <!-- news  nasional -->
-    <hr>
-    <h1 style="text-align: center;">NASIONAL</h1>
+    <!-- news -->
     <hr>
     <div class="row">
-      <div class="col-sm-8 mb-3 mt-3">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/gibran.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
-                <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:31 WIB</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/komandan.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Mayjen Nur Alamsyah Resmi Jadi Komandan Korps Marinir</h5>
-                <p class="card-text">Kepala Staf Angkatan Laut (KSAL) Laksamana Muhammad Ali memimpin serah terima jabatan delapan perwira di lingkungan TNI Angkatan Laut, Minggu (21/5).</p>
-                <a href="nasional2.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:44 WIB</small>
-              </div>
-            </div>
+      <div class="col-sm-8">
+        <div class="card mb-3">
+          <img src="img/taylor.jpeg" class="card-img-top" alt="da">
+          <div class="card-body">
+            <h5 class="card-title"><b>Saat Konser, Taylor Swift Ungkap Sedang di Puncak Kebahagiaan</b></h5>
+            <p class="card-text"><small class="text-body-secondary">Last updated Rabu, 17 Mei 2023 16:53 WIB</small></p>
+            <p class="card-text">Taylor Swift mengungkapkan bahwa saat ini hidupnya sedang dalam puncak kebahagiaan. Perasaannya itu ia ucapkan di hadapan penggemarnya saat menggelar konser The Eras Tour di Foxborough, Massachusetts, AS.</p>
+            <p>"Aku rasanya ingin mengatakan kepada kalian, entahlah, aku tidak pernah merasa sebahagia ini dalam hidupku, di segala aspek dalam hidupku sebelumnya," kata Taylor Swift, dilansir dari ET, Minggu (21/5).
+            </p>
+            <p>"Dan aku ingin berterima kasih kepada kalian karena telah menjadi bagian dari itu," lanjutnya.
+            </p>
+            <p>Sebelum Swift memainkan salah satu lagu hitnya yang berjudul Question...?, solois berusia 33 tahun itu mengatakan lagu tersebut membawanya pada kenangan indah.
+            </p>
+            <p>"Bukan hanya turnya. Aku merasa hidupku akhirnya mulai terasa masuk akal. Jadi aku ingin memainkan lagu ini yang membawa banyak kenangan-kenangan yang indah," ucap Swift.
+            </p>
+            <p>Taylor Swift kini memperkenalkan Matty Healy dalam hidupnya. Vokalis The 1975 itu tertangkap basah hadir dalam sejumlah konser The Eras Tour. Keduanya disebut sedang menjalin hubungan asmara setelah terpergok gandengan tangan saat menghadiri acara makan malam bersama sahabat mereka.
+            </p>
+            <p>Dalam foto yang beredar di media sosial, Swift tampak datang dengan dress berwarna gading dengan tangan kirinya memegang sebuah gelas. Sementara itu, tangan kanannya dipegang oleh Matty yang berjalan di sampingnya.
+            </p>
+            <p>Menurut laporan TMZ, keduanya menghadiri acara makan malam di Casa Cipriani, Manhattan, New York.
+            </p>
+            <p>Kebersamaan Taylor Swift dan Matty Healy ini jadi yang kedua setelah sebelumnya mereka tertangkap kamera berada dalam mobil yang sama menuju kondominium milik Swift di Nashville.
+            </p>
+            <p>Menurut laporan New York Post, Senin (8/5), Swift dan Matty sebenarnya sempat menjalin hubungan asmara selama beberapa waktu pada 2014 lalu dan kemudian memutuskan tetap berteman.
+            </p>
+            <p>Namun seorang sumber Us Weekly pada Senin (8/5) menyebut Taylor Swift tidak seserius itu menjalani hubungan dengan Matty Healy.
+            </p>
+            <p>Terutama, karena Swift dan Joe Alwyn baru berpisah sekitar dua bulan lalu setelah pacaran selama enam tahun.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- berita -->
+      <!-- rekomendasi -->
       <div class="col-sm-4 mt-3 mb-3">
         <h4>Rekomendasi untuk anda</h4>
         <hr>
@@ -106,6 +106,7 @@
         </ol>
       </div>
     </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

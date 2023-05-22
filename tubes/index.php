@@ -45,9 +45,6 @@
               <a class="nav-link" href="tech.php">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="edu.php">EDUCATION</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
@@ -67,13 +64,13 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/vitamine.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Vitamin E: Ketahui Manfaat Penting dan Contoh Makanannya</h5>
+                <p class="card-text">Kandungan vitamin E dapat diperoleh dari beberapa jenis makanan seperti sayuran dan buah-buahan. Lalu, apa manfaat manfaat penting vitamin E bagi tubuh manusia?</p>
+                <a href="health1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -82,13 +79,13 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/argentina.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</h5>
+                <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
+                <a href="sport1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -97,13 +94,13 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/gibran.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
+                <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
+                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -112,13 +109,13 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/hacker.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</h5>
+                <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
+                <a href="tech1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -127,32 +124,18 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/desta.png" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Desta Mahendra Gugat Cerai Natasha Rizki</h5>
+                <p class="card-text">Deddy Mahendra Desta resmi mengajukan gugatan cerai talak kepada istrinya, Natasha Rizki. Gugatan itu diajukan Desta dan telah terdaftar di Pengadilan Agama (PA) Jakarta Selatan pada 11 Mei 2023</p>
+                <a href="seleb1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
         </div>
-        <hr>
-        <div class="card">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <!-- topic 1 -->
@@ -160,87 +143,55 @@
         <h4>Berita Terpopuler</h4>
         <hr>
         <ol class="list-group list-group-numbered">
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://money.kompas.com/read/2023/05/15/190000026/indonesia-dan-mesir-tandatangani-kontrak-dagang-rp-12-8-triliun" target="_blank">Indonesia dan Mesir Tandatangani Kontrak Dagang Rp 12,8 Triliun</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://bola.kompas.com/read/2023/05/15/19000078/eduardo-almeida-resmi-latih-rans-nusantara-fc" target="_blank">Eduardo Almeida Resmi Latih RANS Nusantara FC</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.kompas.com/tren/read/2023/05/15/190000465/9-minuman-penurun-berat-badan-apa-saja-" target="_blank">9 Minuman Penurun Berat Badan, Apa Saja?</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.kompas.id/baca/nusantara/2023/05/15/desa-wisata-di-lombok-mulai-bersiap-sambut-motogp-2023-di-mandalika?apn=id.kompas.app" target="_blank">Desa Wisata di Lombok Mulai Bersiap Sambut MotoGP 2023 di Mandalika</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://bandung.kompas.com/read/2023/05/15/190302178/new-balance-bangun-pabrik-di-cirebon-menteri-luhut-sebut-indonesia-bersiap" target="_blank">New Balance Bangun Pabrik di Cirebon, Menteri Luhut Sebut Indonesia Bersiap Salip Vietnam</a></li>
         </ol>
       </div>
 
       <!-- topic 2 -->
       <hr>
       <h4>Berita Utama Lainnya</h4>
-      <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 mt-1 justify-content-center">
         <div class="col card-group">
           <div class="card shadow">
-            <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+            <img src="img/sandi.jpg" class="img-fluid rounded-start" alt="#">
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
+              <p class="card-text"><a href="https://www.liputan6.com/lifestyle/read/5287352/ikut-war-tiket-konser-coldplay-di-jakarta-sandiaga-uno-ingatkan-beli-di-jalur-resmi"><b>Ikut War Tiket Konser Coldplay di Jakarta, Sandiaga Uno Ingatkan Beli di Jalur Resmi</b></a></p>
             </div>
           </div>
         </div>
         <div class="col card-group">
           <div class="card shadow">
-            <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+            <img src="img/lifter.jpg" class="img-fluid rounded-start" alt="#">
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
+              <p class="card-text"><a href="https://www.liputan6.com/tekno/read/5287367/lifter-rahmat-erwin-abdullah-sumbang-emas-di-sea-games-2023-dan-pecahkan-3-rekor-tuai-pujian-warganet"><b>Lifter Rahmat Erwin Abdullah Sumbang Emas di SEA Games 2023 dan Pecahkan 3 Rekor, Tuai Pujian Warganet</b></a></p>
             </div>
           </div>
         </div>
         <div class="col card-group">
           <div class="card shadow">
-            <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
+            <img src="img/thailand.jpg" class="img-fluid rounded-start" alt="#">
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
+              <p class="card-text"><a href="https://www.liputan6.com/bola/read/5287208/jelang-final-sepak-bola-sea-games-2023-pelatih-thailand-bocorkan-strategi-jinakkan-timnas-indonesia-u-22"><b>Jelang Final Sepak Bola SEA Games 2023, Pelatih Thailand Bocorkan Strategi Jinakkan Timnas Indonesia U-22</b></a></p>
             </div>
           </div>
         </div>
         <div class="col card-group">
           <div class="card shadow">
-            <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+            <img src="img/bogor.jpeg" class="img-fluid rounded-start" alt="#">
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
+              <p class="card-text"><a href="https://www.liputan6.com/news/read/5287342/kondisi-terkini-habib-bahar-bin-smith-usai-ditembak-orang-tak-dikenal-di-bogorp"><b>Kondisi Terkini Habib Bahar bin Smith Usai Ditembak Orang Tak Dikenal di Bogor</b></a></p>
             </div>
           </div>
         </div>
         <div class="col card-group">
           <div class="card shadow">
-            <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+            <img src="img/pln.jpeg" class="img-fluid rounded-start" alt="#">
             <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-group">
-          <div class="card shadow">
-            <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
-            <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-group">
-          <div class="card shadow">
-            <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
-            <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-group">
-          <div class="card shadow">
-            <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
-            <div class="card-body">
-              <h5 class="card-title">lorem ipsum</h5>
-              <p class="card-text"><a href="news.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga rem harum fugit repellat atque.</a></p>
+              <p class="card-text"><a href="https://www.liputan6.com/bisnis/read/5286487/pln-buka-32-posisi-lowongan-kerja-di-rekrutmen-bersama-bumn-2023-ayo-daftar"><b>PLN Buka 32 Posisi Lowongan Kerja di Rekrutmen Bersama BUMN 2023, Ayo Daftar</b></a></p>
             </div>
           </div>
         </div>
@@ -254,51 +205,46 @@
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-4 mt-1 justify-content-center">
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+                <img src="img/penipuan.jpg" class="img-fluid rounded-start" alt="#">
                 <div class="card-body">
-                  <h5 class="card-title">lorem ipsum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat tempora dolore harum libero tempore.</p>
-                  <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                  <h5 class="card-title">Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening</h5>
+                  <a href="https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening" class="btn btn-primary" target="_blank">Baca selengkapnya</a>
                 </div>
               </div>
             </div>
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+                <img src="img/enzy.png" class="img-fluid rounded-start" alt="#">
                 <div class="card-body">
-                  <h5 class="card-title">lorem ipsum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat tempora dolore harum libero tempore.</p>
-                  <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                  <h5 class="card-title">Enzy Storia Resmi Menikah dengan Molen Kasetra</h5>
+                  <a href="https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra" class="btn btn-primary" target="_blank">Baca selengkapnya</a>
                 </div>
               </div>
             </div>
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
+                <img src="img/batuk.jpeg" class="img-fluid rounded-start" alt="#">
                 <div class="card-body">
-                  <h5 class="card-title">lorem ipsum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat tempora dolore harum libero tempore.</p>
-                  <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                  <h5 class="card-title">9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat</h5>
+                  <a href="https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat" class="btn btn-primary" target="_blank">Baca selengkapnya</a>
                 </div>
               </div>
             </div>
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+                <img src="img/johnny.jpeg" class="img-fluid rounded-start" alt="#">
                 <div class="card-body">
-                  <h5 class="card-title">lorem ipsum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat tempora dolore harum libero tempore.</p>
-                  <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                  <h5 class="card-title">Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa</h5>
+                  <a href="https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa" class="btn btn-primary" target="_blank">Baca selengkapnya</a>
                 </div>
               </div>
             </div>
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
+                <img src="img/puteri.jpeg" class="img-fluid rounded-start" alt="#">
                 <div class="card-body">
-                  <h5 class="card-title">lorem ipsum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat tempora dolore harum libero tempore.</p>
-                  <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                  <h5 class="card-title">Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari</h5>
+                  <a href="https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari" class="btn btn-primary" target="_blank">Baca selengkapnya</a>
                 </div>
               </div>
             </div>

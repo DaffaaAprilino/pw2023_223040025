@@ -45,9 +45,6 @@
               <a class="nav-link" href="tech.php">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="edu.php">EDUCATION</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" href="seleb.php">SELEB</a>
             </li>
           </ul>
@@ -60,7 +57,7 @@
       </div>
     </nav>
 
-    <!-- news health -->
+    <!-- news seleb -->
     <hr>
     <h1 style="text-align: center;">SELEB </h1>
     <hr>
@@ -69,53 +66,27 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/desta.png" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Desta Mahendra Gugat Cerai Natasha Rizki</h5>
+                <p class="card-text">Deddy Mahendra Desta resmi mengajukan gugatan cerai talak kepada istrinya, Natasha Rizki. Gugatan itu diajukan Desta dan telah terdaftar di Pengadilan Agama (PA) Jakarta Selatan pada 11 Mei 2023</p>
+                <a href="seleb1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Rabu, 17 Mei 2023 16:53 WIB</small>
               </div>
             </div>
           </div>
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/taylor.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Saat Konser, Taylor Swift Ungkap Sedang di Puncak Kebahagiaan</h5>
+                <p class="card-text">Taylor Swift mengungkapkan bahwa saat ini hidupnya sedang dalam puncak kebahagiaan. Perasaannya itu ia ucapkan di hadapan penggemarnya saat menggelar konser The Eras Tour di Foxborough, Massachusetts, AS.</p>
+                <a href="seleb2.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur similique distinctio illum laborum eaque? Tempora.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 07:30 WIB</small>
               </div>
             </div>
           </div>
@@ -127,11 +98,11 @@
         <h4>Rekomendasi untuk anda</h4>
         <hr>
         <ol class="list-group list-group-numbered">
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening">Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra">Enzy Storia Resmi Menikah dengan Molen Kasetra</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat">9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa">Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari">Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari</a></li>
         </ol>
       </div>
     </div>

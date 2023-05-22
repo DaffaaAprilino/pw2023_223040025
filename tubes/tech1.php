@@ -30,22 +30,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.php">HOME</a>
+              <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="health.php">HEALTH</a>
+              <a class="nav-link" href="#">HEALTH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sport.php">SPORT</a>
+              <a class="nav-link" href="#">SPORT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  active" href="nasional.php">NASIONAL</a>
+              <a class="nav-link" href="#">NASIONAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tech.php">TECH</a>
+              <a class="nav-link" href="#">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="seleb.php">SELEB</a>
+              <a class="nav-link" href="#">SELEB</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -57,43 +57,45 @@
       </div>
     </nav>
 
-    <!-- news  nasional -->
-    <hr>
-    <h1 style="text-align: center;">NASIONAL</h1>
+    <!-- news -->
     <hr>
     <div class="row">
-      <div class="col-sm-8 mb-3 mt-3">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/gibran.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
-                <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:31 WIB</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/komandan.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Mayjen Nur Alamsyah Resmi Jadi Komandan Korps Marinir</h5>
-                <p class="card-text">Kepala Staf Angkatan Laut (KSAL) Laksamana Muhammad Ali memimpin serah terima jabatan delapan perwira di lingkungan TNI Angkatan Laut, Minggu (21/5).</p>
-                <a href="nasional2.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:44 WIB</small>
-              </div>
-            </div>
+      <div class="col-sm-8">
+        <div class="card mb-3">
+          <img src="img/hacker.jpeg" class="card-img-top" alt="da">
+          <div class="card-body">
+            <h5 class="card-title"><b>Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</b></h5>
+            <p class="card-text"><small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:45 WIB</small></p>
+            <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
+            <p> Direktur Jenderal Aplikasi dan Informatika Kominfo Semuel Abrijani Pangerapan mengatakan pihaknya sudah bertemu dengan BSI membahas ihwal dugaan kebocoran data.
+            </p>
+            <p>"Kami baru melakukan pertemuan untuk mengklarifikasi karena di publik ada yang mengatakan ada data-data pribadi yang bocor," ujar dia di sela Peluncuran Program Adopsi Teknologi Digital 4.0, Senin (22/5).
+            </p>
+            <p>Sebelumnya, Pendiri Ethical Hacker Indonesia Teguh Aprianto mengungkap BSI menjadi korban serangan siber modus pemerasan alias ransomware oleh peretas LockBit.
+            </p>
+            <p>Total data yg dicuri mencapai 1,5 TB, termasuk 15 juta data pengguna dan password untuk akses internal dan layanannya, serta data pribadi nasabah serta informasi pinjamannya.
+            </p>
+            <p>Tak ketinggalan, nomor kontak orang-orang yang pernah dihubungi oleh BSI pun bocor dalam database call_history.csv berukuran 10 GB. Semuel melanjutkan pihaknya sudah berhasil mendapatkan sampel data yang diduga bocor dan kini tengah mengkaji dan memverifikasinya ke BSI.
+            </p>
+            <p>"Pastinya itu yang kita lakukan dan kita akan memberikan rekomendasi-rekomendasi bagaimana ke depannya kalau memang ada kebocoran," tutur dia.
+            </p>
+            <p>Kendati demikian, Semuel belum mengetahui berapa jumlah sementara nasabah yang terdampak kebocoran data.
+            </p>
+            <p>Sebelumnya, BSI mengalami gangguan layanan pada Senin (8/5). Dampaknya, para nasabah tak bisa bertransaksi via mobile banking dan ATM.
+            </p>
+            <p>Komunitas siber mengungkap BSI diduga terkena serangan ransomware atau peretasan dengan modus pemerasan yang dilakukan aktor Lockbit.
+            </p>
+            <p>Merespons kabar tersebut, Corporate Secretary BSI Gunawan A. Hartoyo mengaku data nasabah aman.
+            </p>
+            <p>"Dapat kami sampaikan bahwa kami memastikan data dan dana nasabah aman, serta aman dalam bertransaksi. Kami berharap nasabah tetap tenang karena kami memastikan data dan dana nasabah aman, serta aman dalam bertransaksi. Kami juga akan bekerjasama dengan otoritas terkait dengan isu kebocoran data," kata dia dalam siaran pers, Selasa (16/5).
+            </p>
+            <p>Setelah menerima informasi tentang kemungkinan serangan, pihaknya mengklaim terus melakukan pengecekan dan menindaklanjuti keseluruhan sistem, serta melakukan mitigasi jangka panjang.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- berita -->
+      <!-- rekomendasi -->
       <div class="col-sm-4 mt-3 mb-3">
         <h4>Rekomendasi untuk anda</h4>
         <hr>
@@ -106,6 +108,7 @@
         </ol>
       </div>
     </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

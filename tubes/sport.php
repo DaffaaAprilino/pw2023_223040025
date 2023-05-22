@@ -45,9 +45,6 @@
               <a class="nav-link" href="tech.php">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="edu.php">EDUCATION</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
@@ -60,7 +57,7 @@
       </div>
     </nav>
 
-    <!-- news health -->
+    <!-- news sport -->
     <hr>
     <h1 style="text-align: center;">SPORT</h1>
     <hr>
@@ -69,53 +66,27 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/argentina.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</h5>
+                <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
+                <a href="sport1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 09:00 WIB</small>
               </div>
             </div>
           </div>
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/timnas.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Bek Timnas U-22 Cium Kaki Orang Tua Usai Raih Emas SEA Games 2023</h5>
+                <p class="card-text">Bek Timnas Indonesia U-22 Haykal Alhafiz melakukan sujud syukur sambil mencium kaki kedua orang tua setelah tiba di rumahnya.</p>
+                <a href="sport2.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur similique distinctio illum laborum eaque? Tempora.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Minggu, 21 Mei 2023 19:20 WIB</small>
               </div>
             </div>
           </div>
@@ -127,11 +98,11 @@
         <h4>Rekomendasi untuk anda</h4>
         <hr>
         <ol class="list-group list-group-numbered">
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening">Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra">Enzy Storia Resmi Menikah dengan Molen Kasetra</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat">9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa">Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari">Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari</a></li>
         </ol>
       </div>
     </div>

@@ -30,22 +30,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.php">HOME</a>
+              <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="health.php">HEALTH</a>
+              <a class="nav-link" href="#">HEALTH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sport.php">SPORT</a>
+              <a class="nav-link" href="#">SPORT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  active" href="nasional.php">NASIONAL</a>
+              <a class="nav-link" href="#">NASIONAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tech.php">TECH</a>
+              <a class="nav-link" href="#">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="seleb.php">SELEB</a>
+              <a class="nav-link" href="#">SELEB</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -57,43 +57,30 @@
       </div>
     </nav>
 
-    <!-- news  nasional -->
-    <hr>
-    <h1 style="text-align: center;">NASIONAL</h1>
+    <!-- news -->
     <hr>
     <div class="row">
-      <div class="col-sm-8 mb-3 mt-3">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/gibran.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
-                <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:31 WIB</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/komandan.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Mayjen Nur Alamsyah Resmi Jadi Komandan Korps Marinir</h5>
-                <p class="card-text">Kepala Staf Angkatan Laut (KSAL) Laksamana Muhammad Ali memimpin serah terima jabatan delapan perwira di lingkungan TNI Angkatan Laut, Minggu (21/5).</p>
-                <a href="nasional2.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:44 WIB</small>
-              </div>
-            </div>
+      <div class="col-sm-8">
+        <div class="card mb-3">
+          <img src="img/argentina.jpeg" class="card-img-top" alt="da">
+          <div class="card-body">
+            <h5 class="card-title"><b>Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</b></h5>
+            <p class="card-text"><small class="text-body-secondary">Last updated Senin, 22 Mei 2023 09:00 WIB</small></p>
+            <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
+            <p>Federasi Sepak Bola Argentina melalui situs resmi dan akun media sosial resmi timnas Argentina mengeluarkan penyataan pada Senin (22/5) pagi WIB bahwa mereka akan menghadapi Australia di Beijing pada 15 Juni dan Indonesia pada 19 Juni.</p>
+            <p>"Timnas yang dipimpin Lionel Scaloni akan bermain pada Juni mendatang di China dan Indonesia. Pertandingan persahabatan yang dikonfirmasi. Tur Asia 2023. 15 Juni Argentina vs Australia di Beijing. Kemudian 19 Juni vs Indonesia di Jakarta. [Catatan] Dalam beberapa hari ke depan stadion dan jadwal akan dikonfirmasi," tulis AFA dikutip dari situs resminya.</p>
+            <p>Tetapi PSSI belum berani menjamin kepastian laga tersebut, meskipun Argentina sudah terang-terangan mengumumkan laga melawan Indonesia digelar 19 Juni di Jakarta.
+              Anggota Komite Eksekutif (Exco) PSSI Arya Sinulingga mengatakan pihaknya akan memberikan pengumuman resmi setelah ada perjanjian hitam di atas putih.</p>
+            <p> Hal tersebut diungkapkan Arya lantaran tak ingin publik sepak bola Indonesia kecewa jika belum ada jaminan kepastian laga tersebut. Arya pun meminta publik bersabar menunggu adanya perjanjian hitam di atas putih. </p>
+            "Kalau belum hitam di atas putih kita tidak bisa jamin," ucap Arya kepada CNNIndonesia.com, Senin (22/5).
+            <p>Jadwal FIFA Matchday periode Juni akan berlangsung pada 12-20 Juni. Indonesia dipastikan akan menghadapi Palestina pada 14 Juni.</p>
+            <p>Kemudian setelah itu Indonesia dikabarkan akan melawan Argentina pada 19 Juni, meski kabar ini belum dikonfirmasi oleh PSSI. Meski demikian Timnas Indonesia dijadwalkan akan memulai pemusatan latihan (TC) pada 6 Juni mendatang guna persiapan menghadapi laga FIFA Matchday.</p>
+
           </div>
         </div>
       </div>
 
-      <!-- berita -->
+      <!-- rekomendasi -->
       <div class="col-sm-4 mt-3 mb-3">
         <h4>Rekomendasi untuk anda</h4>
         <hr>
@@ -106,6 +93,7 @@
         </ol>
       </div>
     </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

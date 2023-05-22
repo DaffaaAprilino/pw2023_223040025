@@ -45,9 +45,6 @@
               <a class="nav-link active" href="tech.php">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="edu.php">EDUCATION</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
@@ -60,7 +57,7 @@
       </div>
     </nav>
 
-    <!-- news health -->
+    <!-- news tech -->
     <hr>
     <h1 style="text-align: center;">TECH</h1>
     <hr>
@@ -69,53 +66,27 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/hacker.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</h5>
+                <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
+                <a href="tech1.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:45 WIB</small>
               </div>
             </div>
           </div>
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/mahasiswi.jpg" class="img-fluid rounded-start" alt="#">
+              <img src="img/gmail.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">Akun Gmail-YouTube Tak Aktif 2 Tahun Akan Dihapus, Ada Pengecualian?</h5>
+                <p class="card-text">Google akan menghapus akun pengguna jika dalam waktu 2 tahun terakhir tak kunjung login di segala platformnya</p>
+                <a href="tech2.php" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/seagames.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur similique distinctio illum laborum eaque? Tempora.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/basket.jpg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">lorem ipsum</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum tempora impedit nulla! Dolorum, cupiditate.</p>
-                <a href="news.php" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                <small class="text-body-secondary">Last updated Jumat, 19 Mei 2023 17:51 WIB</small>
               </div>
             </div>
           </div>
@@ -127,11 +98,11 @@
         <h4>Rekomendasi untuk anda</h4>
         <hr>
         <ol class="list-group list-group-numbered">
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening">Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra">Enzy Storia Resmi Menikah dengan Molen Kasetra</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat">9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa">Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari">Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari</a></li>
         </ol>
       </div>
     </div>

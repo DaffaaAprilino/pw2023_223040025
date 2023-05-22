@@ -28,3 +28,51 @@ body{
 .nav-link:hover::after{
   opacity: 1;
 }
+
+/* berita terpopuler + rekomendasi */
+.list-group-item a:link {
+  color: black; /* Warna teks saat belum diklik */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+.list-group-item a:visited {
+  color: black; /* Warna teks saat sudah diklik */
+}
+
+.list-group-item a:hover {
+  color: #0d6efd; /* Warna teks saat diarahkan kursor */
+}
+
+.list-group-item a:active {
+  color: #0d6efd; /* Warna teks saat sedang diklik */
+}
+
+
+
+/* berita utama */
+.card-text a:link {
+  color: black; /* Warna teks saat belum diklik */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+.card-text a:visited {
+  color: black; /* Warna teks saat sudah diklik */
+}
+
+.card-text a:hover {
+  color: #0d6efd; /* Warna teks saat diarahkan kursor */
+}
+
+.card-text a:active {
+  color: #0d6efd; /* Warna teks saat sedang diklik */
+}
+
+/* bagian tech 2 */
+p a {
+  color: black;
+}
+
+p a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}

@@ -45,9 +45,6 @@
               <a class="nav-link" href="#">TECH</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">EDUCATION</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">SELEB</a>
             </li>
           </ul>
@@ -65,15 +62,17 @@
     <div class="row">
       <div class="col-sm-8">
         <div class="card mb-3">
-          <img src="img/Danews.png" class="card-img-top" alt="da">
+          <img src="img/timnas.jpeg" class="card-img-top" alt="da">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa illo molestias soluta laboriosam dolorum recusandae magnam vero quas iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde repudiandae quas sit dolore. Error distinctio velit, nulla soluta nemo officia modi minima molestiae laboriosam? Doloribus, at illo. Maiores, eos.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem minus veniam fugit pariatur voluptate tempora.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi officia molestias natus facere esse aliquam corporis repellendus aperiam libero labore eligendi nobis voluptates consectetur delectus consequatur, animi consequuntur eaque, perspiciatis, ex possimus eum! Dicta fugit, odit labore obcaecati ducimus repellendus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet expedita veniam voluptas dolore animi alias atque officia possimus odit sed quaerat, ratione odio nam labore voluptatum laboriosam. Vero vel deserunt animi tempore, in sint obcaecati atque iste consequuntur, explicabo provident fugiat adipisci et officia eaque non facilis. Obcaecati, saepe.</p>
+            <h5 class="card-title"><b>Bek Timnas U-22 Cium Kaki Orang Tua Usai Raih Emas SEA Games 2023</b></h5>
+            <p class="card-text"><small class="text-body-secondary">Last updated Minggu, 21 Mei 2023 19:20 WIB</small></p>
+            <p class="card-text">Bek Timnas Indonesia U-22 Haykal Alhafiz melakukan sujud syukur sambil mencium kaki kedua orang tua setelah tiba di rumahnya.</p>
+            <p>Kedatangan remaja Desa Grabagan, Kecamatan Tulangan, Sidoarjo itu disambut meriah. Pemain PSIS Semarang itu langsung sujud ke kedua orang tuanya Muhammad Rifai (57) dan Nur Hikmawati (55).</p>
+            <p>Haykal sujud dan sungkem ke kedua orang tuanya yang telah menunggu di teras rumah. Tangis bahagia bercampur syukur tak bisa dibendung ketiganya.</p>
+            <p>Haykal menyebut keberhasilan timnya menyabet medali emas cabang sepakbola SEA Games merupakan sebuah kebanggaan tersendiri. Sebab, prestasi ini terakhir kali diukir timnas 32 tahun silam.</p>
+            <p>"Dengan keberhasilan Timnas Indonesia U 22 membawa pulang medali emas ke Tanah Air merupakan kebanggaan tersendiri buat saya. Tapi itu semua tidak lepas dari doa semua kerabat dan teman-teman di Sidoarjo," kata Haykal dikutip dari Detikjatim.</p>
+            <p>Haykal akan menghabiskan waktu libur sejenak usai pulang dari Kamboja. Selanjutnya ia akan bergabung ke klub barunya PSIS pada 3 Juni mendatang. Dalam kesempatan itu, Haykal mengungkapkan alasan dirinya mau bergabung dengan klub berjuluk Mahesa Jenar itu.</p>
+            <p>"Saya memilih PSIS Semarang, karena tim yang pertama menawari untuk bergabung. Akhirnya saya memilih PSIS Semarang," ujar Haykal.</p>
           </div>
         </div>
       </div>
@@ -83,11 +82,11 @@
         <h4>Rekomendasi untuk anda</h4>
         <hr>
         <ol class="list-group list-group-numbered">
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
-          <li class="list-group-item list-group-item-action"><a href="news.php">Lorem ipsum dolor sit amet.</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening">Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra">Enzy Storia Resmi Menikah dengan Molen Kasetra</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat">9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa">Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa</a></li>
+          <li class="list-group-item list-group-item-action"><a href="https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari">Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari</a></li>
         </ol>
       </div>
     </div>
