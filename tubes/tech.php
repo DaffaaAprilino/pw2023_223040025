@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
             </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
+          </li>
           </ul>
         </div>
       </div>
@@ -70,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</h5>
                 <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
-                <a href="tech1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/teknologi/20230522122857-192-952382/kominfo-klarifikasi-soal-dugaan-bocoran-data-bsi-yang-beredar" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:45 WIB</small>
@@ -83,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Akun Gmail-YouTube Tak Aktif 2 Tahun Akan Dihapus, Ada Pengecualian?</h5>
                 <p class="card-text">Google akan menghapus akun pengguna jika dalam waktu 2 tahun terakhir tak kunjung login di segala platformnya</p>
-                <a href="tech2.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/teknologi/20230519160859-185-951586/akun-gmail-youtube-tak-aktif-2-tahun-akan-dihapus-ada-pengecualian" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Jumat, 19 Mei 2023 17:51 WIB</small>

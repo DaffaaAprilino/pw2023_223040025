@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
             </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
+          </li>
           </ul>
         </div>
       </div>
@@ -66,14 +83,14 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col card-group">
             <div class="card shadow">
-              <img src="img/vitamine.jpeg" class="img-fluid rounded-start" alt="#">
+              <img src="img/sakit.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
-                <h5 class="card-title">Vitamin E: Ketahui Manfaat Penting dan Contoh Makanannya</h5>
-                <p class="card-text">Kandungan vitamin E dapat diperoleh dari beberapa jenis makanan seperti sayuran dan buah-buahan. Lalu, apa manfaat manfaat penting vitamin E bagi tubuh manusia?</p>
-                <a href="health1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">6 Makanan Terbaik Saat Masuk Angin, Bikin Cepat Sembuh</h5>
+                <p class="card-text">Sedang tidak enak badan atau masuk angin? Ini rekomendasi makanan terbaik agar pulih lebih cepat</p>
+                <a href="https://www.cnnindonesia.com/gaya-hidup/20230519172320-261-951638/6-makanan-terbaik-saat-masuk-angin-bikin-cepat-sembuh" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 15 Mei 2023 17:45 WIB</small>
+                <small class="text-body-secondary">Last updated Senin, 20 Mei 2023 08:45 WIB</small>
               </div>
             </div>
           </div>
@@ -83,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">10 Minuman Penurun Berat Badan yang Ampuh Buat Diet</h5>
                 <p class="card-text">Bukan cuma makanan yang bisa menurunkan berat badan. Ada juga minuman penurun berat badan yang bisa dinikmati untuk diet, Meskipun tidak ada minuman penurun berat badan yang ajaib, minuman tertentu membuat Anda kenyang lebih lama.</p>
-                <a href="health2.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/gaya-hidup/20230516082839-262-950081/10-minuman-penurun-berat-badan-yang-ampuh-buat-diet" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Selasa, 16 Mei 2023 08:36 WIB</small>

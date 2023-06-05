@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link active" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
             </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
+          </li>
           </ul>
         </div>
       </div>
@@ -70,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Desta Mahendra Gugat Cerai Natasha Rizki</h5>
                 <p class="card-text">Deddy Mahendra Desta resmi mengajukan gugatan cerai talak kepada istrinya, Natasha Rizki. Gugatan itu diajukan Desta dan telah terdaftar di Pengadilan Agama (PA) Jakarta Selatan pada 11 Mei 2023</p>
-                <a href="seleb1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/hiburan/20230517164738-234-950926/desta-mahendra-gugat-cerai-natasha-rizki" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Rabu, 17 Mei 2023 16:53 WIB</small>
@@ -83,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Saat Konser, Taylor Swift Ungkap Sedang di Puncak Kebahagiaan</h5>
                 <p class="card-text">Taylor Swift mengungkapkan bahwa saat ini hidupnya sedang dalam puncak kebahagiaan. Perasaannya itu ia ucapkan di hadapan penggemarnya saat menggelar konser The Eras Tour di Foxborough, Massachusetts, AS.</p>
-                <a href="seleb2.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/hiburan/20230522064251-234-952217/saat-konser-taylor-swift-ungkap-sedang-di-puncak-kebahagiaan" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 07:30 WIB</small>

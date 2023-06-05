@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
             </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
+          </li>
           </ul>
         </div>
       </div>
@@ -70,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</h5>
                 <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
-                <a href="sport1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/olahraga/20230522085234-142-952253/respons-pssi-usai-afa-resmi-umumkan-indonesia-vs-argentina-19-juni" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 09:00 WIB</small>
@@ -83,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Bek Timnas U-22 Cium Kaki Orang Tua Usai Raih Emas SEA Games 2023</h5>
                 <p class="card-text">Bek Timnas Indonesia U-22 Haykal Alhafiz melakukan sujud syukur sambil mencium kaki kedua orang tua setelah tiba di rumahnya.</p>
-                <a href="sport2.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/olahraga/20230521161926-142-952125/bek-timnas-u-22-cium-kaki-orang-tua-usai-raih-emas-sea-games-2023" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Minggu, 21 Mei 2023 19:20 WIB</small>

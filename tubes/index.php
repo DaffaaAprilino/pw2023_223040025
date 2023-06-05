@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
+            </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
           </ul>
         </div>
       </div>
@@ -64,13 +81,13 @@
         <div class="card">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/vitamine.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
+              <img src="img/sakit.jpeg" class="img-fluid rounded-start" alt="#" style="width: 100%; height:100%;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Vitamin E: Ketahui Manfaat Penting dan Contoh Makanannya</h5>
-                <p class="card-text">Kandungan vitamin E dapat diperoleh dari beberapa jenis makanan seperti sayuran dan buah-buahan. Lalu, apa manfaat manfaat penting vitamin E bagi tubuh manusia?</p>
-                <a href="health1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <h5 class="card-title">6 Makanan Terbaik Saat Masuk Angin, Bikin Cepat Sembuh</h5>
+                <p class="card-text">Sedang tidak enak badan atau masuk angin? Ini rekomendasi makanan terbaik agar pulih lebih cepat</p>
+                <a href="https://www.cnnindonesia.com/gaya-hidup/20230519172320-261-951638/6-makanan-terbaik-saat-masuk-angin-bikin-cepat-sembuh" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -85,7 +102,7 @@
               <div class="card-body">
                 <h5 class="card-title">Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</h5>
                 <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
-                <a href="sport1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/olahraga/20230522085234-142-952253/respons-pssi-usai-afa-resmi-umumkan-indonesia-vs-argentina-19-juni" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -100,7 +117,7 @@
               <div class="card-body">
                 <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
                 <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/nasional/20230522121547-617-952377/gibran-usai-dipanggil-dpp-pdip-saya-tegak-lurus-arahan-ketua-umum" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -115,7 +132,7 @@
               <div class="card-body">
                 <h5 class="card-title">Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</h5>
                 <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
-                <a href="tech1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/teknologi/20230522122857-192-952382/kominfo-klarifikasi-soal-dugaan-bocoran-data-bsi-yang-beredar" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -130,7 +147,7 @@
               <div class="card-body">
                 <h5 class="card-title">Desta Mahendra Gugat Cerai Natasha Rizki</h5>
                 <p class="card-text">Deddy Mahendra Desta resmi mengajukan gugatan cerai talak kepada istrinya, Natasha Rizki. Gugatan itu diajukan Desta dan telah terdaftar di Pengadilan Agama (PA) Jakarta Selatan pada 11 Mei 2023</p>
-                <a href="seleb1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/hiburan/20230517164738-234-950926/desta-mahendra-gugat-cerai-natasha-rizki" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>

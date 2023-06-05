@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -48,10 +50,25 @@
               <a class="nav-link" href="seleb.php">SELEB</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto pe-5">
             <li class="nav-item">
-              <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              <?php if (isset($_SESSION['login'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+              </ul>
             </li>
+          <?php else : ?>
+            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+          <?php endif; ?>
+          </li>
           </ul>
         </div>
       </div>
@@ -70,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
                 <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="nasional1.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/nasional/20230522121547-617-952377/gibran-usai-dipanggil-dpp-pdip-saya-tegak-lurus-arahan-ketua-umum" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:31 WIB</small>
@@ -83,7 +100,7 @@
               <div class="card-body">
                 <h5 class="card-title">Mayjen Nur Alamsyah Resmi Jadi Komandan Korps Marinir</h5>
                 <p class="card-text">Kepala Staf Angkatan Laut (KSAL) Laksamana Muhammad Ali memimpin serah terima jabatan delapan perwira di lingkungan TNI Angkatan Laut, Minggu (21/5).</p>
-                <a href="nasional2.php" class="btn btn-primary">Baca selengkapnya</a>
+                <a href="https://www.cnnindonesia.com/nasional/20230522122634-20-952379/mayjen-nur-alamsyah-resmi-jadi-komandan-korps-marinir" class="btn btn-primary">Baca selengkapnya</a>
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:44 WIB</small>
