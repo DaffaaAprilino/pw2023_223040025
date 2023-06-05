@@ -4,6 +4,8 @@ $name = 'Tambah Berita';
 
 // saat tombol submit diklik
 if (isset($_POST["tambah"])) {
+
+  var_dump($_POST);
   // jalankan fungsi tambah()
   if (tambah($_POST) > 0) {
     echo "<script>
@@ -12,6 +14,7 @@ if (isset($_POST["tambah"])) {
     </script>";
   }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -46,11 +49,15 @@ if (isset($_POST["tambah"])) {
           </div>
           <div class="mb-3">
             <label for="kategori" class="form-label">kategori</label>
-            <input type="text" class="form-control" name="kategori" id="kategori">
+            <input type="text" class="form-control" name="kategori_id" id="kategori_id">
           </div>
           <div class="mb-3">
             <label for="tanggalpublikasi" class="form-label">tanggal publikasi</label>
-            <input type="text" class="form-control" name="kategori" id="kategori">
+            <input type="text" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi">
+          </div>
+          <div class="mb-3">
+            <label for="link" class="form-label">link</label>
+            <input type="text" class="form-control" name="link" id="link">
           </div>
           <button class="btn btn-primary" type="submit" name="submit">Tambah Data</button>
         </form>

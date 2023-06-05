@@ -269,9 +269,17 @@
         </div>
       </div>
     </div>
-    <footer class="bg-dark p-1 text-center">
+    <footer class="footer bg-dark text-light text-center">
       <div class="container">
-        <p class="text-white">©2023. Daffaa Aprilino.</p>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>&copy; 2023 DA News.</p>
+            <ul class="social-media-icons">
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </div>

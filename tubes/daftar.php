@@ -11,6 +11,7 @@ if (isset($_SESSION['username'])) {
 }
 
 if (isset($_POST['submit'])) {
+  $conn = koneksi();
   $username = $_POST['username'];
   $email = $_POST['email'];
   $password = md5($_POST['password']);
@@ -59,7 +60,7 @@ if (isset($_POST['submit'])) {
     <form action="" method="POST" class="login-email">
       <p class="login-text" style="font-size: 2rem; font-weight: 800;">Daftar</p>
       <div class="input-group">
-        <input type="text" placeholder="Masukan Username" name="username" value="<?php echo $username; ?>" required>
+        <input type="text" placeholder="Masukan Username" name="username" value="<?php echo $username; ?>" required autocomplete="off">
       </div>
       <div class="input-group">
         <input type="email" placeholder="Masukan Email" name="email" value="<?php echo $email; ?>" required>

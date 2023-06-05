@@ -19,7 +19,7 @@ $berita = query("SELECT * FROM berita");
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <h4>Halo, Selamat datang Admin DA News</h5>
+        <h4>Halo, Selamat datang Admin DA News</h4>
       </a>
     </div>
   </nav>
@@ -34,8 +34,9 @@ $berita = query("SELECT * FROM berita");
             <th scope="col">Gambar</th>
             <th scope="col">Judul</th>
             <th scope="col">Isi</th>
-            <th scope="col">kategori</th>
-            <th scope="col">Tanggal publikasi</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">Tanggal Publikasi</th>
+            <th scope="col">Link</th>
             <th scope="col">Aksi</th>
           </tr>
         </thead>
@@ -43,22 +44,24 @@ $berita = query("SELECT * FROM berita");
           <?php $i = 1; ?>
           <?php foreach ($berita as $brt) : ?>
             <tr>
-              <th scope="row"><?= $i++; ?></th>
+              <td><?= $i++; ?></td>
               <td>
                 <img src="img/<?= $brt['gambar']; ?>" width="50">
               </td>
               <td><?= $brt['judul']; ?></td>
               <td><?= $brt['isi']; ?></td>
-              <td><?= $brt['kategori']; ?></td>
-              <td><?= $brt['Tanggal publikasi']; ?></td>
+              <td><?= $brt['kategori_id']; ?></td>
+              <td><?= $brt['tanggal_publikasi']; ?></td>
+              <td><?= $brt['link']; ?></td>
               <td>
-                <a href="ubah.php?id=<?= $brt['id']; ?>" class="badge text-bg-warning">ubah</a> |
-                <a href="hapus.php?id=<?= $brt['id']; ?>" class="badge text-bg-danger" onclick="return confirm('yakin?');">hapus</a>
+                <a href="ubah.php?id=<?= $brt['id']; ?>" class="badge text-bg-warning">Ubah</a> |
+                <a href="hapus.php?id=<?= $brt['id']; ?>" class="badge text-bg-danger" onclick="return confirm('Yakin?');">Hapus</a>
               </td>
             </tr>
           <?php endforeach; ?>
         </tbody>
       </table>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

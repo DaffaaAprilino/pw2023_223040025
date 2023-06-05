@@ -11,6 +11,7 @@ if (isset($_SESSION['username'])) {
 }
 
 if (isset($_POST['submit'])) {
+  $conn = koneksi();
   $email = $_POST['email'];
   $password = md5($_POST['password']);
 
