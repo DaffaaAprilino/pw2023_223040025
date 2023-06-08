@@ -1,5 +1,8 @@
-<?php session_start(); ?>
-
+<?php
+session_start();
+require('php/functions.php');
+$berita = query("SELECT * FROM berita WHERE kategori_id = '3'");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -81,20 +84,22 @@
     <div class="row">
       <div class="col-sm-8 mb-3 mt-3">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/gibran.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Gibran Usai Dipanggil DPP PDIP: Saya Tegak Lurus Arahan Ketua Umum</h5>
-                <p class="card-text">Wali Kota Solo sekaligus kader PDIP, Gibran Rakabuming menegaskan akan tegak lurus terhadap arahan Ketua Umum Megawati Soekarnoputri terkait Pilpres 2024.</p>
-                <a href="https://www.cnnindonesia.com/nasional/20230522121547-617-952377/gibran-usai-dipanggil-dpp-pdip-saya-tegak-lurus-arahan-ketua-umum" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:31 WIB</small>
+          <?php foreach ($berita as $brt) : ?>
+            <div class="col card-group">
+              <div class="card shadow">
+                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $brt['judul']; ?></h5>
+                  <p class="card-text"><?= $brt['isi']; ?></p>
+                  <a href="<?= $brt['link']; ?>" class="btn btn-primary">Baca selengkapnya</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated, <?= $brt['tanggal_publikasi']; ?></small>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col card-group">
+          <?php endforeach; ?>
+          <!-- <div class="col card-group">
             <div class="card shadow">
               <img src="img/komandan.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
@@ -106,7 +111,7 @@
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:44 WIB</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

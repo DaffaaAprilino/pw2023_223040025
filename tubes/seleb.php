@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require('php/functions.php');
+$berita = query("SELECT * FROM berita WHERE kategori_id = '5'");
+?>
 
 <!doctype html>
 <html lang="en">
@@ -81,20 +85,22 @@
     <div class="row">
       <div class="col-sm-8 mb-3 mt-3">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/desta.png" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Desta Mahendra Gugat Cerai Natasha Rizki</h5>
-                <p class="card-text">Deddy Mahendra Desta resmi mengajukan gugatan cerai talak kepada istrinya, Natasha Rizki. Gugatan itu diajukan Desta dan telah terdaftar di Pengadilan Agama (PA) Jakarta Selatan pada 11 Mei 2023</p>
-                <a href="https://www.cnnindonesia.com/hiburan/20230517164738-234-950926/desta-mahendra-gugat-cerai-natasha-rizki" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Rabu, 17 Mei 2023 16:53 WIB</small>
+          <?php foreach ($berita as $brt) : ?>
+            <div class="col card-group">
+              <div class="card shadow">
+                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $brt['judul']; ?></h5>
+                  <p class="card-text"><?= $brt['isi']; ?></p>
+                  <a href="<?= $brt['link']; ?>" class="btn btn-primary">Baca selengkapnya</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated, <?= $brt['tanggal_publikasi']; ?></small>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col card-group">
+          <?php endforeach; ?>
+          <!-- <div class="col card-group">
             <div class="card shadow">
               <img src="img/taylor.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
@@ -106,7 +112,7 @@
                 <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 07:30 WIB</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

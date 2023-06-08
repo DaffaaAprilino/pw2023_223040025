@@ -42,7 +42,7 @@ if (isset($_POST["ubah"])) {
         <input type="hidden" name="id" value="<?= $brt['id']; ?>">
         <div class="mb-3 w-25">
           <label for="judul" class="form-label">Judul</label>
-          <input type="text" class="form-control" name="judul" id="judul" maxlength="9" autofocus required value="<?= $brt['judul']; ?>">
+          <input type="text" class="form-control" name="judul" id="judul" autofocus required value="<?= $brt['judul']; ?>">
         </div>
         <div class="mb-3">
           <label for="isi" class="form-label">isi</label>
@@ -58,7 +58,7 @@ if (isset($_POST["ubah"])) {
         </div>
         <div class="mb-3">
           <label for="tanggalpublikasi" class="form-label">tanggal publikasi</label>
-          <input type="text" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi" value="<?= $brt['tanggal_publikasi']; ?>">
+          <input type="date" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi" value="<?= $brt['tanggal_publikasi']; ?>">
         </div>
         <div class="mb-3">
           <label for="link" class="form-label">link</label>

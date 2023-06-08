@@ -1,5 +1,8 @@
-<?php session_start(); ?>
-
+<?php
+session_start();
+require('php/functions.php');
+$berita = query("SELECT * FROM berita WHERE kategori_id = '4'");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -81,20 +84,22 @@
     <div class="row">
       <div class="col-sm-8 mb-3 mt-3">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/hacker.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Kominfo Klarifikasi Soal Dugaan Bocoran Data BSI yang Beredar</h5>
-                <p class="card-text">Kementerian Komunikasi dan Informatikamengklarifikasi soal dugaan kebocoran data nasabah Bank Syariah Indonesia (BSI)</p>
-                <a href="https://www.cnnindonesia.com/teknologi/20230522122857-192-952382/kominfo-klarifikasi-soal-dugaan-bocoran-data-bsi-yang-beredar" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 12:45 WIB</small>
+          <?php foreach ($berita as $brt) : ?>
+            <div class="col card-group">
+              <div class="card shadow">
+                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $brt['judul']; ?></h5>
+                  <p class="card-text"><?= $brt['isi']; ?></p>
+                  <a href="<?= $brt['link']; ?>" class="btn btn-primary">Baca selengkapnya</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated, <?= $brt['tanggal_publikasi']; ?></small>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col card-group">
+          <?php endforeach; ?>
+          <!-- <div class="col card-group">
             <div class="card shadow">
               <img src="img/gmail.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
@@ -106,7 +111,7 @@
                 <small class="text-body-secondary">Last updated Jumat, 19 Mei 2023 17:51 WIB</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

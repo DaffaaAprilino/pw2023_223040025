@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require('php/functions.php');
+$berita = query("SELECT * FROM berita WHERE kategori_id = '1'");
+?>
 
 <!doctype html>
 <html lang="en">
@@ -81,20 +85,22 @@
     <div class="row">
       <div class="col-sm-8 mb-3 mt-3">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/sakit.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">6 Makanan Terbaik Saat Masuk Angin, Bikin Cepat Sembuh</h5>
-                <p class="card-text">Sedang tidak enak badan atau masuk angin? Ini rekomendasi makanan terbaik agar pulih lebih cepat</p>
-                <a href="https://www.cnnindonesia.com/gaya-hidup/20230519172320-261-951638/6-makanan-terbaik-saat-masuk-angin-bikin-cepat-sembuh" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 20 Mei 2023 08:45 WIB</small>
+          <?php foreach ($berita as $brt) : ?>
+            <div class="col card-group">
+              <div class="card shadow">
+                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $brt['judul']; ?></h5>
+                  <p class="card-text"><?= $brt['isi']; ?></p>
+                  <a href="<?= $brt['link']; ?>" class="btn btn-primary">Baca selengkapnya</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated, <?= $brt['tanggal_publikasi']; ?></small>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col card-group">
+          <?php endforeach; ?>
+          <!-- <div class="col card-group">
             <div class="card shadow">
               <img src="img/jus.jpg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
@@ -106,7 +112,7 @@
                 <small class="text-body-secondary">Last updated Selasa, 16 Mei 2023 08:36 WIB</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

@@ -5,12 +5,12 @@ $name = 'Tambah Berita';
 // saat tombol submit diklik
 if (isset($_POST["tambah"])) {
 
-  var_dump($_POST);
+
   // jalankan fungsi tambah()
   if (tambah($_POST) > 0) {
     echo "<script>
     alert('Data berhasil ditambahkan!');
-    document.location.href = 'index.php';
+    document.location.href = 'admin.php';
     </script>";
   }
 }
@@ -37,11 +37,11 @@ if (isset($_POST["tambah"])) {
         <form action="" method="post">
           <div class="mb-3 w-25">
             <label for="judul" class="form-label">Judul</label>
-            <input type="text" class="form-control" name="judul" id="judul" maxlength="9" autofocus required>
+            <input type="text" class="form-control" name="judul" id="judul" autofocus required>
           </div>
           <div class="mb-3">
             <label for="isi" class="form-label">isi</label>
-            <input type="text" class="form-control" name="isi" id="isi" required>
+            <input type="text" class="form-control" name="isi" id="isi">
           </div>
           <div class="mb-3">
             <label for="gambar" class="form-label">Gambar</label>
@@ -53,13 +53,13 @@ if (isset($_POST["tambah"])) {
           </div>
           <div class="mb-3">
             <label for="tanggalpublikasi" class="form-label">tanggal publikasi</label>
-            <input type="text" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi">
+            <input type="date" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi">
           </div>
           <div class="mb-3">
             <label for="link" class="form-label">link</label>
             <input type="text" class="form-control" name="link" id="link">
           </div>
-          <button class="btn btn-primary" type="submit" name="submit">Tambah Data</button>
+          <button class="btn btn-primary" type="tambah" name="tambah">Tambah Data</button>
         </form>
       </div>
     </div>

@@ -67,7 +67,8 @@ function ubah($data)
             isi = '$isi',
             gambar = '$gambar',
             kategori_id = '$kategori_id',
-            tanggal_publikasi = '$tanggal_publikasi'
+            tanggal_publikasi = '$tanggal_publikasi',
+            link = '$link'
             WHERE id = $id";
 
   mysqli_query($conn, $query);

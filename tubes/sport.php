@@ -1,5 +1,8 @@
-<?php session_start(); ?>
-
+<?php
+session_start();
+require('php/functions.php');
+$berita = query("SELECT * FROM berita WHERE kategori_id = '2'");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -81,20 +84,22 @@
     <div class="row">
       <div class="col-sm-8 mb-3 mt-3">
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col card-group">
-            <div class="card shadow">
-              <img src="img/argentina.jpeg" class="img-fluid rounded-start" alt="#">
-              <div class="card-body">
-                <h5 class="card-title">Respons PSSI Usai AFA Resmi Umumkan Indonesia vs Argentina 19 Juni</h5>
-                <p class="card-text">PSSI memberikan respons usai Federasi Sepak Bola Argentina (AFA) mengumumkan jadwal Argentina vs Indonesia di Jakarta pada 19 Juni. Berikut respons PSSI usai Argentina resmi umumkan lawan Timnas Indonesia digelar 19 Juni.</p>
-                <a href="https://www.cnnindonesia.com/olahraga/20230522085234-142-952253/respons-pssi-usai-afa-resmi-umumkan-indonesia-vs-argentina-19-juni" class="btn btn-primary">Baca selengkapnya</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated Senin, 22 Mei 2023 09:00 WIB</small>
+          <?php foreach ($berita as $brt) : ?>
+            <div class="col card-group">
+              <div class="card shadow">
+                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $brt['judul']; ?></h5>
+                  <p class="card-text"><?= $brt['isi']; ?></p>
+                  <a href="<?= $brt['link']; ?>" class="btn btn-primary">Baca selengkapnya</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated, <?= $brt['tanggal_publikasi']; ?></small>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col card-group">
+          <?php endforeach; ?>
+          <!-- <div class="col card-group">
             <div class="card shadow">
               <img src="img/timnas.jpeg" class="img-fluid rounded-start" alt="#">
               <div class="card-body">
@@ -106,7 +111,7 @@
                 <small class="text-body-secondary">Last updated Minggu, 21 Mei 2023 19:20 WIB</small>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
