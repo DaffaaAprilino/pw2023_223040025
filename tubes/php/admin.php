@@ -1,7 +1,18 @@
 <?php
 require 'functions.php';
-
-$berita = query("SELECT * FROM berita");
+if (isset($_GET['search'])) {
+  $keyword = $_GET['keyword'];
+  $query = "SELECT * FROM 
+  berita
+  WHERE 
+  judul LIKE '%$keyword%' OR
+  kategori_id LIKE '%$keyword%' OR
+  tanggal_publikasi LIKE '%$keyword%' 
+  ";
+  $berita = query($query);
+} else {
+  $berita = query("SELECT * FROM berita");
+}
 
 ?>
 
@@ -54,48 +65,57 @@ $berita = query("SELECT * FROM berita");
         <div class="col-md-5 justify-content-end">
           <form action="" method="get">
             <div class="input-group my-3">
-              <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Cari berita." autofocus autocomplete="off">
+              <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Cari daftar berita." autofocus autocomplete="off">
               <button class="btn btn-primary" type="submit" name="search" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
           </form>
         </div>
       </div>
 
-
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Gambar</th>
-            <th scope="col">Judul</th>
-            <th scope="col">Isi</th>
-            <th scope="col">Kategori</th>
-            <th scope="col">Tanggal Publikasi</th>
-            <th scope="col">Link</th>
-            <th scope="col">Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php $i = 1; ?>
-          <?php foreach ($berita as $brt) : ?>
+      <?php if ($berita) : ?>
+        <table class="table table-bordered">
+          <thead>
             <tr>
-              <td><?= $i++; ?></td>
-              <td>
-                <img src="../img/<?= $brt['gambar']; ?>" width="50">
-              </td>
-              <td><?= $brt['judul']; ?></td>
-              <td><?= $brt['isi']; ?></td>
-              <td><?= $brt['kategori_id']; ?></td>
-              <td><?= $brt['tanggal_publikasi']; ?></td>
-              <td><?= $brt['link']; ?></td>
-              <td>
-                <a href="ubah.php?id=<?= $brt['id']; ?>" class="badge text-bg-warning">Ubah</a> |
-                <a href="hapus.php?id=<?= $brt['id']; ?>" class="badge text-bg-danger" onclick="return confirm('Yakin?');">Hapus</a>
-              </td>
+              <th scope="col">#</th>
+              <th scope="col">Gambar</th>
+              <th scope="col">Judul</th>
+              <th scope="col">Isi</th>
+              <th scope="col">Kategori</th>
+              <th scope="col">Tanggal Publikasi</th>
+              <th scope="col">Link</th>
+              <th scope="col">Aksi</th>
             </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <?php $i = 1; ?>
+            <?php foreach ($berita as $brt) : ?>
+              <tr>
+                <td><?= $i++; ?></td>
+                <td>
+                  <img src="../img/<?= $brt['gambar']; ?>" width="50">
+                </td>
+                <td><?= $brt['judul']; ?></td>
+                <td><?= $brt['isi']; ?></td>
+                <td><?= $brt['kategori_id']; ?></td>
+                <td><?= $brt['tanggal_publikasi']; ?></td>
+                <td><?= $brt['link']; ?></td>
+                <td>
+                  <a href="ubah.php?id=<?= $brt['id']; ?>" class="badge text-bg-warning">Ubah</a> |
+                  <a href="hapus.php?id=<?= $brt['id']; ?>" class="badge text-bg-danger" onclick="return confirm('Yakin?');">Hapus</a>
+                </td>
+              </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      <?php else : ?>
+        <div class="row">
+          <div class="col-md-20">
+            <div class="alert alert-danger text-center" role="alert">
+              Daftar berita tidak ditemukan!
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

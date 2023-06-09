@@ -29,10 +29,13 @@ function tambah($data)
   $isi = htmlspecialchars($data['isi']);
   $gambar = htmlspecialchars($data['gambar']);
   $kategori_id = htmlspecialchars($data['kategori_id']);
-  $tanggal_publikasi = htmlspecialchars($data['tanggal_publikasi']);
+  $tanggal_publikasi = isset($data['tanggal_publikasi']) ? htmlspecialchars($data['tanggal_publikasi']) : '';
   $link = htmlspecialchars($data['link']);
 
-  $query = "INSERT INTO berita VALUES (null, '$judul', '$isi', '$gambar', '$kategori_id', '$tanggal_publikasi', '$link')";
+  // Jika tanggal_publikasi tidak diinputkan, gunakan nilai kosong dalam kueri
+  $tanggal_publikasi_value = !empty($tanggal_publikasi) ? "'" . date('Y-m-d', strtotime($tanggal_publikasi)) . "'" : "NULL";
+
+  $query = "INSERT INTO berita VALUES (null, '$judul', '$isi', '$gambar', '$kategori_id', $tanggal_publikasi_value, '$link')";
 
   mysqli_query($conn, $query) or die(mysqli_error($conn));
 
@@ -59,19 +62,22 @@ function ubah($data)
   $isi = htmlspecialchars($data['isi']);
   $gambar = htmlspecialchars($data['gambar']);
   $kategori_id = htmlspecialchars($data['kategori_id']);
-  $tanggal_publikasi = htmlspecialchars($data['tanggal_publikasi']);
+  $tanggal_publikasi = isset($data['tanggal_publikasi']) ? htmlspecialchars($data['tanggal_publikasi']) : '';
   $link = htmlspecialchars($data['link']);
+
+  // Jika tanggal_publikasi tidak diinputkan atau kosong, gunakan nilai NULL dalam kueri
+  $tanggal_publikasi_value = !empty($tanggal_publikasi) ? "'" . date('Y-m-d', strtotime($tanggal_publikasi)) . "'" : "NULL";
 
   $query = "UPDATE berita SET
             judul = '$judul',
             isi = '$isi',
             gambar = '$gambar',
             kategori_id = '$kategori_id',
-            tanggal_publikasi = '$tanggal_publikasi',
+            tanggal_publikasi = $tanggal_publikasi_value,
             link = '$link'
             WHERE id = $id";
 
-  mysqli_query($conn, $query);
+  mysqli_query($conn, $query) or die(mysqli_error($conn));
 
   return mysqli_affected_rows($conn);
 }
