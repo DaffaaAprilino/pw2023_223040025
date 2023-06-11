@@ -28,14 +28,7 @@ $rekomen = query("SELECT * FROM berita WHERE kategori_id = '8'");
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-md-3">
-          <form action="" method="get">
-            <div class="input-group d-flex ms-auto my-4 my-lg-0">
-              <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Search news." autofocus autocomplete="off">
-              <button class=" btn btn-secondary" type="submit" name="search" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          </form>
-        </div>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -91,7 +84,7 @@ $rekomen = query("SELECT * FROM berita WHERE kategori_id = '8'");
           <?php foreach ($berita as $brt) : ?>
             <div class="col card-group">
               <div class="card shadow">
-                <img src="img/<?= $brt['gambar']; ?>" class="img-fluid rounded-start" alt="#">
+                <img src="img/<?= $brt['gambar']; ?>" class="object-fit-cover" alt="#">
                 <div class="card-body">
                   <h5 class="card-title"><?= $brt['judul']; ?></h5>
                   <p class="card-text"><?= $brt['isi']; ?></p>

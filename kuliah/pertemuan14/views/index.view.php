@@ -12,7 +12,7 @@
       <form action="" method="get">
         <div class="input-group my-3">
           <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Search student(s).." autofocus autocomplete="off">
-          <button class=" btn btn-primary" type="submit" name="search" id="search-button">search</button>
+          <button class="btn btn-primary" type="submit" name="search" id="search-button">search</button>
         </div>
       </form>
     </div>

@@ -25,20 +25,13 @@ $rekomen = query("SELECT * FROM berita WHERE kategori_id = '8'");
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">DA<strong>News</strong> </a>
+        <a class="navbar-brand" href="#">DA<strong>News</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-md-3">
-          <form action="" method="get">
-            <div class="input-group d-flex ms-auto my-4 my-lg-0">
-              <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Search news." autofocus autocomplete="off">
-              <button class=" btn btn-secondary" type="submit" name="search" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          </form>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.php">HOME</a>
             </li>
@@ -81,6 +74,7 @@ $rekomen = query("SELECT * FROM berita WHERE kategori_id = '8'");
         </div>
       </div>
     </nav>
+
 
     <!-- news health -->
     <hr>

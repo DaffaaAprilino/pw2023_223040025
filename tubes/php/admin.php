@@ -73,7 +73,7 @@ if (isset($_GET['search'])) {
       </div>
 
       <?php if ($berita) : ?>
-        <table class="table table-bordered">
+        <table class="table table-striped table-bordered">
           <thead>
             <tr>
               <th scope="col">#</th>

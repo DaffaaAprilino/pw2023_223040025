@@ -30,46 +30,51 @@ if (isset($_POST["ubah"])) {
 <body>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-<div class="container mt-3">
-  <h1>Ubah berita</h1>
+  <div class="container mt-3">
+    <h1>Ubah berita</h1>
 
 
-  <div class="row">
-    <div class="col-md-8">
-      <form action="" method="post">
-        <input type="hidden" name="id" value="<?= $brt['id']; ?>">
-        <div class="mb-3 w-25">
-          <label for="judul" class="form-label">Judul</label>
-          <input type="text" class="form-control" name="judul" id="judul" autofocus required value="<?= $brt['judul']; ?>">
-        </div>
-        <div class="mb-3">
-          <label for="isi" class="form-label">isi</label>
-          <input type="text" class="form-control" name="isi" id="isi" value="<?= $brt['isi']; ?>">
-        </div>
-        <div class="mb-3">
-          <label for="gambar" class="form-label">Gambar</label>
-          <input type="text" class="form-control" name="gambar" id="gambar" value="<?= $brt['gambar']; ?>">
-        </div>
-        <div class="mb-3">
-          <label for="kategori" class="form-label">kategori</label>
-          <input type="text" class="form-control" name="kategori_id" id="kategori_id" value="<?= $brt['kategori_id']; ?>">
-        </div>
-        <div class="mb-3">
-          <label for="tanggalpublikasi" class="form-label">tanggal publikasi</label>
-          <input type="date" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi" value="<?= $brt['tanggal_publikasi']; ?>">
-        </div>
-        <div class="mb-3">
-          <label for="link" class="form-label">link</label>
-          <input type="text" class="form-control" name="link" id="link" value="<?= $brt['link']; ?>">
-        </div>
+    <div class="row">
+      <div class="col-md-8">
+        <form action="" method="post" enctype="multipart/form-data>
+          <input type=" hidden" name="id" value="<?= $brt['id']; ?>">
+          <div class="mb-3 w-25">
+            <label for="judul" class="form-label">Judul</label>
+            <input type="text" class="form-control" name="judul" id="judul" autofocus required value="<?= $brt['judul']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="isi" class="form-label">isi</label>
+            <input type="text" class="form-control" name="isi" id="isi" value="<?= $brt['isi']; ?>">
+          </div>
+          <div class="mb-3">
+            <input type="hidden" name="gambar_lama" value="<?= $brt['gambar']; ?>">
+            <label for="gambar" class="form-label">Gambar</label>
+            <input type="file" class="form-control" name="gambar" id="gambar" class="gambar" onchange="previewImage()">
+            <img src="../img/<?= $brt['gambar']; ?>" width="120" style="display: block;" class="img-preview">
+          </div>
+          <div class="mb-3">
+            <label for="kategori" class="form-label">kategori</label>
+            <input type="text" class="form-control" name="kategori_id" id="kategori_id" value="<?= $brt['kategori_id']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="tanggalpublikasi" class="form-label">tanggal publikasi</label>
+            <input type="date" class="form-control" name="tanggal_publikasi" id="tanggal_publikasi" value="<?= $brt['tanggal_publikasi']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="link" class="form-label">link</label>
+            <input type="text" class="form-control" name="link" id="link" value="<?= $brt['link']; ?>">
+          </div>
 
-        <button class=" btn btn-primary" type="submit" name="ubah">Ubah Data</button>
-      </form>
+          <button class=" btn btn-primary" type="submit" name="ubah">Ubah Data</button>
+        </form>
+      </div>
     </div>
+
   </div>
 
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
 
 </html>

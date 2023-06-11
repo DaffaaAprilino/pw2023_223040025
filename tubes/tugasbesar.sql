@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 08, 2023 at 12:05 PM
+-- Generation Time: Jun 11, 2023 at 05:09 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -33,7 +33,7 @@ CREATE TABLE `berita` (
   `isi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `gambar` varchar(255) DEFAULT NULL,
   `kategori_id` int DEFAULT NULL,
-  `tanggal_publikasi` date NOT NULL,
+  `tanggal_publikasi` date DEFAULT NULL,
   `link` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -52,11 +52,22 @@ INSERT INTO `berita` (`id`, `judul`, `isi`, `gambar`, `kategori_id`, `tanggal_pu
 (8, 'Mayjen Nur Alamsyah Resmi Jadi Komandan Korps Marinir', 'Kepala Staf Angkatan Laut (KSAL) Laksamana Muhammad Ali memimpin serah terima jabatan delapan perwira di lingkungan TNI Angkatan Laut, Minggu (21/5).', 'komandan.jpeg', 3, '2023-05-22', 'https://www.cnnindonesia.com/nasional/20230522122634-20-952379/mayjen-nur-alamsyah-resmi-jadi-komandan-korps-marinir'),
 (11, 'Akun Gmail-YouTube Tak Aktif 2 Tahun Akan Dihapus, Ada Pengecualian?', 'Google akan menghapus akun pengguna jika dalam waktu 2 tahun terakhir tak kunjung login di segala platformnya', 'gmail.jpeg', 4, '2023-05-19', 'https://www.cnnindonesia.com/teknologi/20230519160859-185-951586/akun-gmail-youtube-tak-aktif-2-tahun-akan-dihapus-ada-pengecualian'),
 (12, 'Saat Konser, Taylor Swift Ungkap Sedang di Puncak Kebahagiaan', 'Taylor Swift mengungkapkan bahwa saat ini hidupnya sedang dalam puncak kebahagiaan. Perasaannya itu ia ucapkan di hadapan penggemarnya saat menggelar konser The Eras Tour di Foxborough, Massachusetts, AS.', 'taylor.jpeg', 5, '2023-05-22', 'https://www.cnnindonesia.com/hiburan/20230522064251-234-952217/saat-konser-taylor-swift-ungkap-sedang-di-puncak-kebahagiaan'),
-(13, 'Indonesia dan Mesir Tandatangani Kontrak Dagang Rp 12,8 Triliun', '', '', 6, '2023-05-15', 'https://money.kompas.com/read/2023/05/15/190000026/indonesia-dan-mesir-tandatangani-kontrak-dagang-rp-12-8-triliun'),
-(14, 'Eduardo Almeida Resmi Latih RANS Nusantara FC', '', '', 6, '2023-05-15', 'https://bola.kompas.com/read/2023/05/15/19000078/eduardo-almeida-resmi-latih-rans-nusantara-fc'),
-(15, '9 Minuman Penurun Berat Badan, Apa Saja?', '', '', 6, '2023-06-08', 'https://www.kompas.com/tren/read/2023/05/15/190000465/9-minuman-penurun-berat-badan-apa-saja-'),
-(16, 'Desa Wisata di Lombok Mulai Bersiap Sambut MotoGP 2023 di Mandalika', '', '', 6, '2023-06-08', 'https://www.kompas.id/baca/nusantara/2023/05/15/desa-wisata-di-lombok-mulai-bersiap-sambut-motogp-2023-di-mandalika?apn=id.kompas.app'),
-(17, 'New Balance Bangun Pabrik di Cirebon, Menteri Luhut Sebut Indonesia Bersiap Salip Vietnam', '', '', 6, '2023-06-08', 'ttps://bandung.kompas.com/read/2023/05/15/190302178/new-balance-bangun-pabrik-di-cirebon-menteri-luhut-sebut-indonesia-bersiap');
+(13, 'Indonesia dan Mesir Tandatangani Kontrak Dagang Rp 12,8 Triliun', '', '', 6, NULL, 'https://money.kompas.com/read/2023/05/15/190000026/indonesia-dan-mesir-tandatangani-kontrak-dagang-rp-12-8-triliun'),
+(14, 'Eduardo Almeida Resmi Latih RANS Nusantara FC', '', '', 6, NULL, 'https://bola.kompas.com/read/2023/05/15/19000078/eduardo-almeida-resmi-latih-rans-nusantara-fc'),
+(15, '9 Minuman Penurun Berat Badan, Apa Saja?', '', '', 6, NULL, 'https://www.kompas.com/tren/read/2023/05/15/190000465/9-minuman-penurun-berat-badan-apa-saja-'),
+(16, 'Desa Wisata di Lombok Mulai Bersiap Sambut MotoGP 2023 di Mandalika', '', '', 6, NULL, 'https://www.kompas.id/baca/nusantara/2023/05/15/desa-wisata-di-lombok-mulai-bersiap-sambut-motogp-2023-di-mandalika?apn=id.kompas.app'),
+(17, 'New Balance Bangun Pabrik di Cirebon, Menteri Luhut Sebut Indonesia Bersiap Salip Vietnam', '', '', 6, NULL, 'ttps://bandung.kompas.com/read/2023/05/15/190302178/new-balance-bangun-pabrik-di-cirebon-menteri-luhut-sebut-indonesia-bersiap'),
+(18, 'Ikut War Tiket Konser Coldplay di Jakarta, Sandiaga Uno Ingatkan Beli di Jalur Resmi', '', 'sandi.jpg', 7, NULL, 'https://www.liputan6.com/lifestyle/read/5287352/ikut-war-tiket-konser-coldplay-di-jakarta-sandiaga-uno-ingatkan-beli-di-jalur-resmi'),
+(19, 'Lifter Rahmat Erwin Abdullah Sumbang Emas di SEA Games 2023 dan Pecahkan 3 Rekor, Tuai Pujian Warganet', '', 'lifter.jpg', 7, NULL, 'https://www.liputan6.com/tekno/read/5287367/lifter-rahmat-erwin-abdullah-sumbang-emas-di-sea-games-2023-dan-pecahkan-3-rekor-tuai-pujian-warganet'),
+(20, 'Jelang Final Sepak Bola SEA Games 2023, Pelatih Thailand Bocorkan Strategi Jinakkan Timnas Indonesia U-22', '', 'thailand.jpg', 7, NULL, 'https://www.liputan6.com/bola/read/5287208/jelang-final-sepak-bola-sea-games-2023-pelatih-thailand-bocorkan-strategi-jinakkan-timnas-indonesia-u-22'),
+(21, 'Kondisi Terkini Habib Bahar bin Smith Usai Ditembak Orang Tak Dikenal di Bogor', '', 'bogor.jpeg', 7, NULL, 'https://www.liputan6.com/news/read/5287342/kondisi-terkini-habib-bahar-bin-smith-usai-ditembak-orang-tak-dikenal-di-bogorp'),
+(22, 'PLN Buka 32 Posisi Lowongan Kerja di Rekrutmen Bersama BUMN 2023, Ayo Daftar', '', 'pln.jpeg', 7, NULL, 'https://www.liputan6.com/bisnis/read/5286487/pln-buka-32-posisi-lowongan-kerja-di-rekrutmen-bersama-bumn-2023-ayo-daftar'),
+(23, 'Viral Modus Penipuan Kiriman File Pdf, Waspada Aksi Sedot Rekening', '', 'penipuan.jpg', 8, NULL, 'https://www.cnnindonesia.com/teknologi/20230516200459-192-950492/viral-modus-penipuan-kiriman-file-pdf-waspada-aksi-sedot-rekening'),
+(24, 'Enzy Storia Resmi Menikah dengan Molen Kasetra', '', 'enzy.png', 8, NULL, 'https://www.cnnindonesia.com/hiburan/20230520133417-234-951822/enzy-storia-resmi-menikah-dengan-molen-kasetra'),
+(25, '9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat', '', 'batuk.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat'),
+(26, 'Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa', '', 'johnny.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa'),
+(27, 'Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari', '', 'puteri.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari'),
+(38, 'dd', 'dd', 'download (1).png', 8, NULL, 'sss');
 
 -- --------------------------------------------------------
 
@@ -93,17 +104,18 @@ CREATE TABLE `user` (
   `id` int NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `role` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
-(1, 'asep', 'asepbalom@gmail.com', '202cb962ac59075b964b07152d234b70'),
-(2, 'haha', 'hahaha@gmail.com', '289dff07669d7a23de0ef88d2f7129e7'),
-(3, 'alfa', 'alfa@gmail.com', 'd81f9c1be2e08964bf9f24b15f0e4900');
+INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`) VALUES
+(1, 'asep', 'asepbalom@gmail.com', '202cb962ac59075b964b07152d234b70', ''),
+(2, 'haha', 'hahaha@gmail.com', '289dff07669d7a23de0ef88d2f7129e7', ''),
+(3, 'alfa', 'alfa@gmail.com', 'd81f9c1be2e08964bf9f24b15f0e4900', '');
 
 --
 -- Indexes for dumped tables
@@ -136,7 +148,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `kategori`
