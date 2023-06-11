@@ -81,7 +81,7 @@ if (isset($_GET['search'])) {
                   <i class="text-light fa-regular fa-circle-user fa-xl"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>

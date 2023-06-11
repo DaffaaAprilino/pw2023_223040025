@@ -38,18 +38,15 @@ if (isset($_GET['search'])) {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav-underline mx-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.php">HOME</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">DAFTAR</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PROFILE</a>
+            <a class="nav-link" href="../profile.php">PROFILE</a>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-right-from-bracket fa-lg"></i></a>
+            <a class="nav-link" href="../logout.php"><i class="fas fa-right-from-bracket fa-lg"></i></a>
           </li>
         </ul>
       </div>

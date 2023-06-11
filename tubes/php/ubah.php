@@ -36,7 +36,7 @@ if (isset($_POST["ubah"])) {
 
     <div class="row">
       <div class="col-md-8">
-        <form action="" method="post" enctype="multipart/form-data>
+        <form action="" method="post" enctype="multipart/form-data">
           <input type=" hidden" name="id" value="<?= $brt['id']; ?>">
           <div class="mb-3 w-25">
             <label for="judul" class="form-label">Judul</label>
@@ -49,7 +49,7 @@ if (isset($_POST["ubah"])) {
           <div class="mb-3">
             <input type="hidden" name="gambar_lama" value="<?= $brt['gambar']; ?>">
             <label for="gambar" class="form-label">Gambar</label>
-            <input type="file" class="form-control" name="gambar" id="gambar" class="gambar" onchange="previewImage()">
+            <input type="file" class="form-control gambar" name="gambar" id="gambar" onchange="previewImage()">
             <img src="../img/<?= $brt['gambar']; ?>" width="120" style="display: block;" class="img-preview">
           </div>
           <div class="mb-3">
@@ -73,7 +73,7 @@ if (isset($_POST["ubah"])) {
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 
 </body>
 

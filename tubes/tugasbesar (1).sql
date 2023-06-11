@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 11, 2023 at 05:09 AM
+-- Generation Time: Jun 11, 2023 at 07:01 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -67,7 +67,7 @@ INSERT INTO `berita` (`id`, `judul`, `isi`, `gambar`, `kategori_id`, `tanggal_pu
 (25, '9 Cara Meredakan Batuk Secara Efektif Alami Tanpa Obat', '', 'batuk.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230517061733-255-950566/9-cara-meredakan-batuk-secara-efektif-alami-tanpa-obat'),
 (26, 'Johnny Depp Jadi Brand Ambassador Parfum Termahal Sepanjang Masa', '', 'johnny.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230516172627-277-950425/johnny-depp-jadi-brand-ambassador-parfum-termahal-sepanjang-masa'),
 (27, 'Berkenalan dengan Puteri Indonesia 2023 Farhana Nariswari', '', 'puteri.jpeg', 8, NULL, 'https://www.cnnindonesia.com/gaya-hidup/20230520001313-277-951742/berkenalan-dengan-puteri-indonesia-2023-farhana-nariswari'),
-(38, 'dd', 'dd', 'download (1).png', 8, NULL, 'sss');
+(38, 'dd', 'dd', '64855a65d5c21.$ekstensi_file', 8, NULL, 'sss');
 
 -- --------------------------------------------------------
 
@@ -113,9 +113,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`) VALUES
-(1, 'asep', 'asepbalom@gmail.com', '202cb962ac59075b964b07152d234b70', ''),
+(1, 'asep', 'asepbalom@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
 (2, 'haha', 'hahaha@gmail.com', '289dff07669d7a23de0ef88d2f7129e7', ''),
-(3, 'alfa', 'alfa@gmail.com', 'd81f9c1be2e08964bf9f24b15f0e4900', '');
+(4, 'Daffaa Aprilino', 'daffaaprilino7@gmail.com', '7901f5b749444697153c207843c33330', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -160,7 +160,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
