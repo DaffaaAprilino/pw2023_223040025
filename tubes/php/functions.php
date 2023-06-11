@@ -109,6 +109,13 @@ function tambah($data)
 function hapus($id)
 {
   $conn = koneksi();
+
+  // menghapus gambar di folder img
+  $brt = query("SELECT * FROM berita WHERE id = $id")[0];
+  if ($brt['gambar'] != 'nofoto.jpg') {
+    unlink('../img/' . $brt['gambar']);
+  }
+
   $query = "DELETE FROM berita WHERE id = $id";
 
   mysqli_query($conn, $query) or die(mysqli_error($conn));

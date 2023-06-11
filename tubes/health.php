@@ -52,24 +52,28 @@ $rekomen = query("SELECT * FROM berita WHERE kategori_id = '8'");
             </li>
           </ul>
           <ul class="navbar-nav ms-auto pe-5">
-            <li class="nav-item">
-              <?php if (isset($_SESSION['login'])) : ?>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="text-light fa-regular fa-circle-user fa-xl"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-              </ul>
-            </li>
-          <?php else : ?>
-            <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
-          <?php endif; ?>
-          </li>
+            <?php if (isset($_SESSION['login'])) : ?>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="text-light fa-regular fa-circle-user fa-xl"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <?php if ($_SESSION['role'] == 'admin') : ?>
+                    <li><a class="dropdown-item" href="php/admin.php">Profile</a></li>
+                  <?php else : ?>
+                    <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                  <?php endif; ?>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+              </li>
+            <?php else : ?>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+              </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>

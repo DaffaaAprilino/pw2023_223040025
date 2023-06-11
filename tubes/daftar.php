@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
         <input type="text" placeholder="Masukan Username" name="username" value="<?php echo $username; ?>" required autocomplete="off">
       </div>
       <div class="input-group">
-        <input type="email" placeholder="Masukan Email" name="email" value="<?php echo $email; ?>" required>
+        <input type="email" placeholder="Masukan Email" name="email" value="<?php echo $email; ?>" required autocomplete="off">
       </div>
       <div class="input-group">
         <input type="password" placeholder="Masukan Password" name="password" value="<?php echo $_POST['password']; ?>" required>

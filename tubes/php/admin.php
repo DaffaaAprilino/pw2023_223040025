@@ -26,6 +26,13 @@ if (isset($_GET['search'])) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
+<style>
+  @media print {
+    .cari {
+      display: none;
+    }
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,6 +45,9 @@ if (isset($_GET['search'])) {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav-underline mx-auto">
           <li class="nav-item">
+            <a class="nav-link" href="../index.php">HOME</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">DAFTAR</a>
           </li>
           <li class="nav-item">
@@ -46,7 +56,10 @@ if (isset($_GET['search'])) {
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../logout.php"><i class="fas fa-right-from-bracket fa-lg"></i></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="print"><i class="fa-solid fa-print fa-lg"></i></a>
+          </li>
+          <a class="nav-link" href="../logout.php"><i class="fas fa-right-from-bracket fa-lg"></i></a>
           </li>
         </ul>
       </div>
@@ -60,7 +73,7 @@ if (isset($_GET['search'])) {
           <a href="tambah.php" class="btn btn-primary">Tambah Berita</a>
         </div>
         <div class="col-md-5 justify-content-end">
-          <form action="" method="get">
+          <form action="" method="get" class="cari">
             <div class="input-group my-3">
               <input type="search" name="keyword" id="keyword" class="form-control" placeholder="Cari daftar berita." autofocus autocomplete="off">
               <button class="btn btn-primary" type="submit" name="search" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -116,6 +129,12 @@ if (isset($_GET['search'])) {
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    const printBtn = document.getElementById('print');
+    printBtn.addEventListener('click', function() {
+      print();
+    })
+  </script>
 </body>
 
 </html>

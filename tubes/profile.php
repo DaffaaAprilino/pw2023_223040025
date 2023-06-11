@@ -1,12 +1,6 @@
 <?php
 session_start();
 require "php/functions.php";
-//Periksa apakah pengguna memiliki akses admin
-if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-  header("Location: login.php");
-} else {
-  header("location: profile.php");
-}
 
 // Fungsi untuk mengambil informasi pengguna dari tabel "user"
 function getUserInfo($username)
@@ -62,25 +56,26 @@ $user = getUserInfo($_SESSION['username']);
 <body>
   <div class="container">
     <div class="card profile-card">
-      <a href="index.php" class="back-link">Kembali ke Halaman Utama</a>
-      <h1>Halo <?= $_SESSION['username']; ?> </h1>
+      <h1>Selamat datang <?= $_SESSION['username']; ?> </h1>
 
       <div class="card-img-top profile-img">
         <img src="img/nofoto.jpg" alt="Default Image" class="img-profile">
       </div>
-      <form action="" method="POST" enctype="multipart/form-data">
-        <div class="upload-container my-3">
-          <input type="file" name="image" id="upload-file" onchange="displayFileName()" class="form-control-file">
-          <label for="upload-file" class="btn btn-primary">Ganti Photo Profile</label>
-          <span id="file-name"></span>
-        </div>
-        <button type="submit" name="upload" class="btn btn-primary upload-btn">Upload Image</button>
-      </form>
       <div class="card-body profile-info">
         <p><strong>Username:</strong> <?php echo $user['username']; ?></p>
         <p><strong>Email:</strong> <?php echo $user['email']; ?></p>
       </div>
       <a class="btn btn-danger logout-link" href="logout.php">Logout</a>
+      <br>
+      <?php
+      if ($_SESSION['role'] === 'admin') {
+        // Jika pengguna adalah admin, tautan akan mengarah ke halaman admin.php
+        echo '<a href="php/admin.php" class="btn btn-secondary">Kembali ke Halaman Admin</a>';
+      } else {
+        // Jika pengguna adalah user, tautan akan mengarah ke halaman index.php
+        echo '<a href="index.php" class="btn btn-secondary">Kembali ke Halaman Utama</a>';
+      }
+      ?>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

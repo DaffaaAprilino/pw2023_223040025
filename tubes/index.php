@@ -81,7 +81,11 @@ if (isset($_GET['search'])) {
                   <i class="text-light fa-regular fa-circle-user fa-xl"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                  <?php if ($_SESSION['role'] == 'admin') : ?>
+                    <li><a class="dropdown-item" href="php/admin.php">Profile</a></li>
+                  <?php else : ?>
+                    <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                  <?php endif; ?>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -93,6 +97,7 @@ if (isset($_GET['search'])) {
                 <a class="nav-link active" href="login.php"><i class="fa-regular fa-circle-user fa-xl"></i></a>
               </li>
             <?php endif; ?>
+
           </ul>
         </div>
       </div>
